@@ -329,3 +329,50 @@ posterior pode alterar pixels já modificados.
 
 **Arquivo planejado:** `src/04_fatiamento_de_imagens.py`
 
+
+---
+
+### Laboratório 05 — Explorando Imagens com Jupyter
+
+**Status:** Concluído. Código executado e visualização validada.
+
+**Objetivo:** Aprender a utilizar o Jupyter Notebook
+dentro do VS Code para explorar e visualizar imagens.
+
+#### Conceitos aprendidos
+
+- Diferença entre arquivos `.py` e `.ipynb`.
+- Utilização de células Code e Markdown.
+- Seleção do kernel Python do ambiente `.venv`.
+- Instalação e utilização do `ipykernel`.
+- Execução de células com `Shift + Enter`.
+- Visualização de imagens diretamente no notebook.
+- Documentação dos resultados com Markdown.
+
+#### Experimento realizado
+
+Foi criada uma matriz NumPy de formato `(3, 3)`,
+representando intensidades de pixels em escala de cinza.
+
+A matriz foi visualizada com Matplotlib, utilizando
+`imshow()`, `cmap="gray"`, `vmin=0`, `vmax=255`
+e `colorbar()`.
+
+#### Resultado
+
+A imagem foi exibida corretamente dentro do notebook,
+sem necessidade de abrir uma janela externa.
+
+#### O que compreendi
+
+O Jupyter Notebook permite combinar explicações,
+código Python e resultados visuais em um mesmo arquivo.
+
+Essa abordagem facilita a experimentação, a análise
+de dados e a documentação dos exercícios.
+
+**Arquivo desenvolvido:** `notebooks/01_exploracao_de_imagens.ipynb`
+
+**Bibliotecas utilizadas:** NumPy, Matplotlib e ipykernel.
+
+
