@@ -1,0 +1,19 @@
+# Ambiente virtual Python
+.venv/
+venv/
+
+# Arquivos temporários gerados pelo Python
+__pycache__/
+*.pyc
+
+# Configurações locais e segredos
+.env
+.env.*
+!.env.example
+
+# Arquivos temporários do Jupyter
+.ipynb_checkpoints/
+
+# Arquivos do sistema operacional
+Thumbs.db
+.DS_Store
