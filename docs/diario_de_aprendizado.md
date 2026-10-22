@@ -417,3 +417,47 @@ sem modificar o arquivo original.
 
 
 
+## Laboratório 07 — Recortes de Fotografias
+
+### Objetivo
+Aprender a recortar regiões específicas de fotografias
+utilizando o fatiamento de matrizes NumPy.
+
+### Ferramentas
+- Python
+- NumPy
+- Pillow
+- Matplotlib
+- Jupyter Notebook
+
+### Atividades realizadas
+1. Carregamento da fotografia PAULO.jpeg.
+2. Conversão da fotografia em matriz NumPy.
+3. Identificação das dimensões da imagem.
+4. Estudo das coordenadas de linhas e colunas.
+5. Seleção da região do rosto por fatiamento.
+6. Conversão do recorte em imagem Pillow.
+7. Salvamento do arquivo PAULO_rosto.png.
+
+### Resultados
+- Imagem original: (1600, 1021, 3).
+- Código do recorte: imagem[300:1000, 300:850].
+- Dimensões do recorte: (700, 550, 3).
+- Total de pixels do recorte: 385.000.
+- Arquivo gerado: imagens/PAULO_rosto.png.
+
+### Conceitos aprendidos
+- O NumPy organiza imagens RGB em três dimensões.
+- O fatiamento utiliza [linhas, colunas].
+- O índice inicial é incluído.
+- O índice final é excluído.
+- Image.fromarray() converte uma matriz em imagem.
+- Pillow utiliza dimensões na ordem (largura, altura).
+
+### Conclusão
+Aprendi a selecionar e salvar regiões de fotografias
+reais utilizando Python e NumPy, preservando a
+fotografia original.
+
+
+
