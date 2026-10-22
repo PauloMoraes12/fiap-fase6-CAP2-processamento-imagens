@@ -34,7 +34,13 @@ Cada exercício será desenvolvido, executado e documentado, com explicações d
 
 ## Status
 
-Em desenvolvimento — Fase 6, Capítulo 2: Introdução à Análise de Imagens.
+Capítulo 2 concluído — laboratórios práticos e miniprojeto integrador disponíveis neste repositório.
+
+## Apresentação no LinkedIn
+
+Compartilhei minha experiência de aprendizagem utilizando minha própria fotografia em experimentos de processamento de imagens com Python, incluindo filtros, matrizes NumPy e preparação de dados para IA.
+
+[Ver publicação do projeto no LinkedIn](https://lnkd.in/p/dtdZF9Sn)
 
 ## Autor
 
