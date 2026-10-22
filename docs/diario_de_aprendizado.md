@@ -573,3 +573,90 @@ um lote para utilização em modelos de IA.
 Compreendi que preparar os dados é uma etapa
 fundamental antes de executar modelos de
 aprendizado de máquina.
+
+
+
+## Laboratório 10 — Miniprojeto Integrador
+
+### Objetivo
+Desenvolver um pipeline de processamento de imagens
+reunindo os conhecimentos adquiridos no Capítulo 02.
+
+### Ferramentas utilizadas
+- Python
+- Pillow
+- NumPy
+- Matplotlib
+- Jupyter Notebook
+- VS Code
+
+### Atividades realizadas
+1. Carreguei a fotografia PAULO.jpeg.
+2. Analisei suas dimensões, canais e tipo de dados.
+3. Converti a fotografia RGB para escala de cinza.
+4. Redimensionei a imagem preservando a proporção.
+5. Apliquei desfoque gaussiano.
+6. Apliquei um filtro de nitidez.
+7. Preparei uma versão de 224 × 224 pixels para IA.
+8. Normalizei os pixels para a escala de 0 a 1.
+9. Adicionei uma dimensão de batch.
+10. Salvei cinco imagens processadas em arquivos PNG.
+
+### Resultados obtidos
+
+Fotografia original:
+- Dimensões: (1021, 1600)
+- Matriz: (1600, 1021, 3)
+- Tipo: uint8
+
+Escala de cinza:
+- Modo: L
+- Matriz: (1600, 1021)
+
+Redimensionamento proporcional:
+- Dimensões: (255, 400)
+
+Preparação para IA:
+- Dimensões: (224, 224)
+- Matriz RGB: (224, 224, 3)
+- Tipo normalizado: float32
+- Batch: (1, 224, 224, 3)
+- Menor valor: 0.0
+- Maior valor: 0.9843137
+
+### Arquivos gerados
+
+Pasta: imagens/resultados_lab10/
+
+- PAULO_cinza.png
+- PAULO_redimensionada.png
+- PAULO_desfocada.png
+- PAULO_nitida.png
+- PAULO_preparada_ia.png
+
+### Aprendizados
+
+Compreendi a diferença entre as dimensões
+apresentadas pelo Pillow e pelo NumPy.
+
+Aprendi a converter imagens RGB para escala
+de cinza e a redimensionar fotografias sem
+distorcer suas proporções.
+
+Pratiquei a aplicação de filtros, a normalização
+dos pixels e a organização de imagens em batches.
+
+Também aprendi a organizar e salvar os resultados
+de um pipeline de processamento de imagens.
+
+### Conclusão
+
+Concluí o miniprojeto integrador, reunindo
+os principais conceitos praticados nos
+10 laboratórios de processamento de imagens.
+
+O projeto demonstra as etapas básicas de
+preparação e transformação de imagens,
+incluindo operações úteis em aplicações de
+visão computacional e inteligência artificial.
+
