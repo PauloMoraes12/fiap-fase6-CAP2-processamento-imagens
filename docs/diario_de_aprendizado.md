@@ -461,3 +461,42 @@ fotografia original.
 
 
 
+## Laboratório 08 — Redimensionamento e Filtros
+
+### Objetivo
+Aprender a redimensionar fotografias e aplicar filtros
+utilizando a biblioteca Pillow.
+
+### Atividades realizadas
+1. Carreguei a fotografia PAULO.jpeg.
+2. Consultei suas dimensões originais: 1021 × 1600 pixels.
+3. Redimensionei a fotografia para 510 × 800 pixels.
+4. Comparei os métodos de interpolação NEAREST e LANCZOS.
+5. Calculei as médias RGB das duas versões:
+   - NEAREST: 131.64
+   - LANCZOS: 131.66
+6. Apliquei o filtro GaussianBlur(radius=5).
+7. Apliquei o filtro SHARPEN.
+8. Salvei as três imagens processadas.
+
+### Conceitos aprendidos
+- resize(): altera as dimensões de uma imagem.
+- Interpolação: calcula os pixels durante o redimensionamento.
+- NEAREST: utiliza o pixel mais próximo.
+- LANCZOS: utiliza uma interpolação mais elaborada.
+- GaussianBlur: suaviza detalhes e contornos.
+- SHARPEN: realça a nitidez aparente.
+- save(): grava a imagem processada em um arquivo.
+
+### Resultados
+- PAULO_redimensionada.png
+- PAULO_desfocada.png
+- PAULO_nitida.png
+
+### Conclusão
+Aprendi a modificar as dimensões e a aparência de
+fotografias com Python, Pillow e NumPy.
+
+Também compreendi que diferentes métodos de
+interpolação podem produzir resultados visuais
+distintos, mesmo com médias RGB semelhantes.
