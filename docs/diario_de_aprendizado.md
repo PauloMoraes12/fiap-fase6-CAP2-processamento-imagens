@@ -376,3 +376,44 @@ de dados e a documentação dos exercícios.
 **Bibliotecas utilizadas:** NumPy, Matplotlib e ipykernel.
 
 
+
+## Laboratório 06 — Processamento de Fotografias
+
+### Objetivo
+Aprender a carregar, analisar, transformar e salvar
+uma fotografia real utilizando Python.
+
+### Ferramentas
+- Python
+- NumPy
+- Pillow
+- Matplotlib
+- Jupyter Notebook
+
+### Atividades realizadas
+1. Carregamento da fotografia paisagem.jpg.
+2. Conversão da fotografia em matriz NumPy.
+3. Identificação das dimensões (2336, 3504, 3).
+4. Análise dos pixels e canais RGB.
+5. Cálculo das médias dos canais de cores.
+6. Conversão para escala de cinza.
+7. Validação matemática da conversão.
+8. Salvamento da imagem paisagem_cinza.png.
+
+### Resultados
+- Fotografia original: 2336 × 3504 pixels.
+- Média do vermelho: 68,24.
+- Média do verde: 82,54.
+- Média do azul: 46,45.
+- Pixel central RGB: [62, 111, 55].
+- Intensidade de cinza do pixel central: 90.
+- Imagem processada salva com sucesso.
+
+### Conclusão
+Aprendi a trabalhar com fotografias reais como
+matrizes NumPy, analisar canais de cores, converter
+imagens para escala de cinza e salvar resultados
+sem modificar o arquivo original.
+
+
+
