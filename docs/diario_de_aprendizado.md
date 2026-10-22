@@ -500,3 +500,76 @@ fotografias com Python, Pillow e NumPy.
 Também compreendi que diferentes métodos de
 interpolação podem produzir resultados visuais
 distintos, mesmo com médias RGB semelhantes.
+
+
+
+
+---
+
+## Laboratório 09 — Preparação de Imagens para IA
+
+### Objetivo
+Aprender a preparar fotografias para utilização em
+modelos de inteligência artificial e aprendizado de máquina.
+
+### Atividades realizadas
+1. Carreguei a fotografia PAULO.jpeg com Pillow.
+2. Padronizei suas dimensões para 224 × 224 pixels.
+3. Converti a fotografia em uma matriz NumPy.
+4. Analisei o formato da matriz: (224, 224, 3).
+5. Converti os pixels de uint8 para float32.
+6. Normalizei os valores RGB dividindo-os por 255.
+7. Comparei a imagem original com a normalizada.
+8. Verifiquei que a normalização preservou os valores
+   dos pixels ao reconstruir a escala original.
+9. Adicionei a dimensão de batch usando np.expand_dims().
+10. Obtive uma matriz com formato (1, 224, 224, 3).
+
+### Conceitos aprendidos
+
+- Padronização: adequação das dimensões das imagens.
+- RGB: três canais de cores por pixel.
+- uint8: números inteiros de 0 a 255.
+- float32: números de ponto flutuante de 32 bits.
+- Normalização: transformação dos pixels para a escala 0–1.
+- Batch: conjunto de imagens organizado em uma matriz.
+- NHWC: ordem batch, altura, largura e canais.
+- np.expand_dims(): adiciona uma dimensão à matriz.
+
+### Resultados
+
+Dimensões originais: (1021, 1600)
+Dimensões padronizadas: (224, 224)
+Formato RGB: (224, 224, 3)
+
+Tipo original: uint8
+Tipo normalizado: float32
+
+Menor valor normalizado: 0.0
+Maior valor normalizado: 0.9843137
+
+Pixel original: [138 115 102]
+Pixel normalizado: [0.5411765 0.4509804 0.4]
+
+Maior diferença após reconstrução: 0.0
+Diferença média após reconstrução: 0.0
+
+Formato com batch: (1, 224, 224, 3)
+
+### Observações importantes
+
+O redimensionamento direto para 224 × 224 pode
+distorcer imagens que não sejam originalmente quadradas.
+
+Nem todos os modelos de IA utilizam a mesma
+normalização ou organização dos canais.
+
+### Conclusão
+
+Aprendi a transformar uma fotografia em uma matriz
+numérica padronizada, normalizada e organizada em
+um lote para utilização em modelos de IA.
+
+Compreendi que preparar os dados é uma etapa
+fundamental antes de executar modelos de
+aprendizado de máquina.
